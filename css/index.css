@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  size: 10rem;
+  text-align: center;
+  list-style-type: none;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+.main_box {
+  width: 100%;
+  height: 800px;
+  background-color: #54BD54;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main_box header {
+  width: 100%;
+  height: 15%;
+  background-color: #54BD54;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 30px;
+}
+
+.main_box .mid_box {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_box .mid_box ul {
+  width: 33.33%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6AC793;
+}
+
+.main_box .mid_box ul li {
+  height: 33.33%;
+  font-size: 2rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_box .mid_box ul li .a_text {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-left: 1.5rem;
+  background-color: #54BD54;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.main_box .mid_box ul li .text_area {
+  width: 10rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.main_box .mid_box .btn_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_box .mid_box .btn_box li {
+  width: 20%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #54BD54;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.main_box .mid_box .btn_box .btn_one {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main_box .mid_box .btn_box .btn_two {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main_box .mid_box .btn_box [class*='btn_area']:hover {
+  cursor: pointer;
+  color: #f57373;
+  background-color: whitesmoke;
+}
+
+.main_box section {
+  width: 100%;
+  height: 100%;
+  background-color: #54BD54;
+}
+
+.main_box section ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main_box section ul li {
+  width: 33.33%;
+  height: 100%;
+  margin-left: 1.7rem;
+  padding-top: 20px;
+}
+
+.main_box .value_box {
+  width: 65px;
+  height: 65px;
+  margin: 3px;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  color: #646464;
+  text-align: center;
+}
+
+.main_box .pop_up {
+  width: 700px;
+  height: 200px;
+  background-color: whitesmoke;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: none;
+  border: 4px solid #646464;
+}
+
+.main_box .pop_up .alert_text {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  color: #646464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main_box .pop_up .x_btn {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  color: #646464;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+
+.main_box .pop_up .x_btn:hover {
+  color: red;
+  background-color: pink;
+}
+/*# sourceMappingURL=index.css.map */

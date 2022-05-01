@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Matrix calculator</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet" />
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="../image/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="../image/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="../image/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="../image/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="../image/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="../image/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="../image/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="../image/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../image/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="../image/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="../image/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="../image/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../image/favicon-16x16.png" />
+		<link rel="manifest" href="../image/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="../image/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+
+	<body>
+		<div class="main_box">
+			<header>
+				<h1>Matrix Calculator</h1>
+			</header>
+			<nav class="mid_box">
+				<ul>
+					<li><span class="a_text">A</span></li>
+					<li>행 &nbsp;<input class="a_matrix text_area" type="text" min="1" max="7" tabindex="10" placeholder="행" maxlength="1" /></li>
+					<li>열 &nbsp;<input class="a_matrix text_area" type="text" min="1" max="7" tabindex="20" placeholder="열" maxlength="1" /></li>
+				</ul>
+				<ul>
+					<li><span class="a_text">B</span></li>
+					<li>행 &nbsp;<input class="b_matrix text_area" type="text" min="1" max="7" tabindex="30" placeholder="행" maxlength="1" /></li>
+					<li>열 &nbsp;<input class="b_matrix text_area" type="text" min="1" max="7" tabindex="40" placeholder="열" maxlength="1" /></li>
+				</ul>
+				<ul class="btn_box">
+					<div class="btn_one">
+						<li id="input_btn" class="btn_area1">Input</li>
+						<li id="random_btn" class="btn_area1">Random</li>
+						<li id="reset_btn" class="btn_area">Reset</li>
+					</div>
+					<div class="btn_two">
+						<li id="plus_btn" class="btn_area2">+</li>
+						<li id="minus_btn" class="btn_area2">-</li>
+						<li id="multy_btn" class="btn_area2">X</li>
+					</div>
+				</ul>
+			</nav>
+			<section>
+				<ul>
+					<li class="a_result result_area"></li>
+					<li class="b_result result_area"></li>
+					<li class="c_result result_area"></li>
+				</ul>
+			</section>
+			<div class="pop_up">
+				<span class="alert_text"></span>
+				<button class="x_btn"><i class="xi-close-min xi-x"></i></button>
+			</div>
+		</div>
+		<script src="../matrix.js/index.js"></script>
+	</body>
+</html>
